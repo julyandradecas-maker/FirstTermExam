@@ -2,17 +2,17 @@ import time
 import itertools
 import requests
 
-alphabet  = "abcdefghijklmnopqrstuvwxyz"
+alphabet = "abcdefghijklmnopqrstuvwxyz"
 alphabetM = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-simbolo   = "!@#(){}[]*=+´'-_.,;><"
-numeros   = "1234567890"
-todos     = alphabet + alphabetM + simbolo + numeros
+simbolo = "!@#(){}[]*=+´'-_.,;><"
+numeros = "1234567890"
+todos = alphabet + alphabetM + simbolo + numeros
 
 usuario_objetivo = "admin"
 
-intentos   = 0
-inicial    = time.time()
-resultado  = ""
+intentos = 0
+inicial = time.time()
+resultado = ""
 encontrado = False
 
 for longitud in range(1, 9):
@@ -37,7 +37,7 @@ for longitud in range(1, 9):
 
 tiempo_total = time.time() - inicial
 
-print(f"Usuario objetivo      : {usuario_objetivo}")
-print(f"Contraseña encontrada : {resultado}")
-print(f"Total de intentos     : {intentos}")
-print(f"Tiempo total          : {tiempo_total:.3f}s")
+print(f"Usuario objetivo: {usuario_objetivo}")
+print(f"Contraseña encontrada: {resultado}")
+print(f"Total de intentos: {intentos}")
+print(f"Tiempo total: {tiempo_total:.3f}s")
